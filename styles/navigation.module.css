@@ -26,3 +26,21 @@
 .nav ul li:hover {
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 45%;
+  }
+  
+  .movieNav {
+    width: 60% !important;
+  }
+  
+  .aboutNav {
+    width: 65% !important;
+  }
+
+  .nav ul {
+    gap: 20px;
+  }
+}

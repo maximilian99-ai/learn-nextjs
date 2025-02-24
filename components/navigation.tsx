@@ -6,8 +6,22 @@ import styles from "../styles/navigation.module.css";
 
 export default function Navigation() {
   const path = usePathname();
+  
+  const getNavClassName = () => {
+    let className = styles.nav;
+    if (path === "/") {
+      className += ` ${styles.homeNav}`;
+    } else if (path.includes("/movies/")) {
+      className += ` ${styles.movieNav}`;
+    } else if (path === "/about-us") {
+      className += ` ${styles.aboutNav}`;
+    }
+    
+    return className;
+  };
+
   return (
-    <nav className={styles.nav}>
+    <nav className={getNavClassName()}>
       <ul>
         <li>
           <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
