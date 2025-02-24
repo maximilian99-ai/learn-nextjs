@@ -29,11 +29,7 @@
 
 @media screen and (max-width: 768px) {
   .nav {
-    width: 50%;
-  }
-  
-  .movieNav {
-    width: 60% !important;
+    width: 60%;
   }
   
   .aboutNav {
