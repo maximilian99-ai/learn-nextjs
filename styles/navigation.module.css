@@ -28,8 +28,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .nav {
-    width: 60%;
+  .mobileNav {
+    width: 60% !important;
   }
   
   .aboutNav {

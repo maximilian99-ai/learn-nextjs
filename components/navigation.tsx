@@ -8,10 +8,10 @@ export default function Navigation() {
   const path = usePathname();
   
   const getNavClassName = () => {
-    let className: string;
+    let className = styles.nav;
     
     if (path === "/" && path.includes("/movies/")) {
-      className += ` ${styles.nav}`;
+      className += ` ${styles.mobileNav}`;
     } else if (path === "/about-us") {
       className += ` ${styles.aboutNav}`;
     }
