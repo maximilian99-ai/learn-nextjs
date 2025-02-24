@@ -11,7 +11,7 @@ export default function Navigation() {
     let className: string;
     
     if (path === "/" && path.includes("/movies/")) {
-      className = styles.nav;
+      className += ` ${styles.nav}`;
     } else if (path === "/about-us") {
       className += ` ${styles.aboutNav}`;
     }
